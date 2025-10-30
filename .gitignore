@@ -2,6 +2,7 @@ node_modules/
 dist/
 coverage/
 *.log
+logs/
 .env
 .DS_Store
 oclif.manifest.json
