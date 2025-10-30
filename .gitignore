@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.DS_Store
+oclif.manifest.json
+
+# Ignore generated tfvars files (but keep examples)
+*.tfvars
+!examples/**/*.tfvars
+!npe.auto.tfvars
+
+# Ignore txt files (but keep important ones)
+*.txt
+!inputs.txt

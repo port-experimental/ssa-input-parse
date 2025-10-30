@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "baseName": "it",
+    "resourceGroupName": "it-cloud-orchestrator-npe",
+    "location": "Australia East",
+    "createResourceGroup": false,
+    "keyVault": {
+      "name": "abc",
+      "resourceGroup": "cde"
+    },
+    "appServiceNetworkConfig": {
+      "applicationSubnetName": "sub-abc",
+      "integrationSubnetName": "sub-cde",
+      "resourceGroupName": "it-aue1-abc-cde-",
+      "spokeVnetName": "it-aue1-npe-abc"
+    },
+    "appServicePlan": {
+      "name": "conpe-appplan",
+      "osType": "Linux",
+      "skuName": "S1",
+      "deploy": true,
+      "resourceGroupName": "cloud-orchestrator-npe"
+    }
+  },
+  "context": {
+    "entity": "app-service-deployment",
+    "blueprint": "azure-app-service",
+    "runId": "run-2024-001"
+  },
+  "payload": {
+    "user": {
+      "email": "user@example.com",
+      "id": "user123"
+    },
+    "trigger": "manual"
+  }
+}
+
