@@ -13,6 +13,7 @@
     "test:coverage": "jest --coverage",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
+    "macos": "pnpm build && oclif pack macos --targets darwin-x64,darwin-arm64",
     "prepack": "pnpm build",
     "postpack": "rm -f oclif.manifest.json",
     "dev": "ts-node src/index.ts"
